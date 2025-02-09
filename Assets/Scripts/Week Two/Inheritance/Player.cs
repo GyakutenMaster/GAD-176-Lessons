@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace SAE.GAD176.Tutorials.Interfaces // If I find myself copying and pasting, it is a good sign that I should create a base Class and Inherit from it.
 {
-    public class Player : MonoBehaviour
+    public class Player : MonoBehaviour, IKillable//, ICollectable, IEquip, etc, I can keep on putting a comma and implement interfaces.
     {
         // public Weapon myWeapon;
-        // public List<Weapon> inventory = new List<Weapon>();
+        // public List<Weapon> inventory = new Lis  t<Weapon>();
         // For example, all guns will have the same basic function.
 
         public List<Enemy> allEnemiesInScene = new List<Enemy>();
@@ -29,6 +29,26 @@ namespace SAE.GAD176.Tutorials.Interfaces // If I find myself copying and pastin
         {
             // if the mouse click is pressed
             // myWrapon.Fire()
+        }
+
+        public bool IsAlive()
+        {
+            return false;
+        }
+
+        public float GetHealth()
+        {
+            return 0;
+        }
+
+        public float ReturnHealth()
+        {
+            return 0;
+        }
+
+        public void Kill()
+        {
+
         }
     }
 }

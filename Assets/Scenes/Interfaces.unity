@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938a75f547ac74f569c654467568b2dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allEnemiesInScene: []
 --- !u!1 &472336322
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7461f256ae440d78405573e43886b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &560819527
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c880e7bb5e5d41248f7e0592f7b7b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!135 &560819529
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -470,7 +473,7 @@ Transform:
   m_GameObject: {fileID: 560819527}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 1.4791993, z: 4.7629743}
+  m_LocalPosition: {x: 0.61, y: 1.4791993, z: 4.7629743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -780,6 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e0750e1fd374cdfad1132fe9368168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
