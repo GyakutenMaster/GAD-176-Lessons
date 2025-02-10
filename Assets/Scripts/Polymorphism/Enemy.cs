@@ -10,7 +10,7 @@ namespace SAE.GAD176.Tutorials.Polymorphism
         [SerializeField] protected float health = 100;
 
         // Start is called before the first frame update
-        void Start()
+        protected virtual void Start()
         {
             // get a refenrence to the player
             playerReference = FindAnyObjectByType<Player>();
@@ -18,12 +18,12 @@ namespace SAE.GAD176.Tutorials.Polymorphism
         }
 
         // Update is called once per frame
-        void Update()
+        protected virtual void Update()
         {
            
         }
 
-        protected void Shout()
+        protected virtual void Shout() // If we want to override a function, it has to be a 'virtual' function.
         {
             if (playerReference)
             {
@@ -32,9 +32,21 @@ namespace SAE.GAD176.Tutorials.Polymorphism
                     Debug.Log("Shouting out to others. " + transform.name);
                 }
             }
+            // play default shouting effect
         }
 
-        public void ChangeHealth (float amount)
+        protected virtual void RunAtPlayer()
+        {
+            if (playerReference)
+            {
+                if (Vector3.Distance(transform.position, playerReference.transform.position) < 10)
+                {
+                    Debug.Log("Running straight at the player! " + transform.name);
+                }
+            }
+        }
+
+        public virtual void ChangeHealth (float amount)
         {
             health += amount;
         }

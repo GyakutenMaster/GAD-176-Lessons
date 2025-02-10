@@ -237,9 +237,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9869500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938a75f547ac74f569c654467568b2dd, type: 3}
+  m_Script: {fileID: 11500000, guid: b1d28b2e38f8e4416ac487aea20c0f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allEnemiesInScene: []
 --- !u!1 &472336322
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,9 +356,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 472336322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7461f256ae440d78405573e43886b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b6ff66da700c4dafa7aa8455ff8af6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &560819527
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +372,7 @@ GameObject:
   - component: {fileID: 560819531}
   - component: {fileID: 560819530}
   - component: {fileID: 560819529}
-  - component: {fileID: 560819528}
+  - component: {fileID: 560819533}
   m_Layer: 0
   m_Name: Enemy Three
   m_TagString: Untagged
@@ -378,18 +380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &560819528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560819527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c880e7bb5e5d41248f7e0592f7b7b53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &560819529
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -470,12 +460,25 @@ Transform:
   m_GameObject: {fileID: 560819527}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 1.4791993, z: 4.7629743}
+  m_LocalPosition: {x: 0.61, y: 1.4791993, z: 4.7629743}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560819533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560819527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a8988b772d34b8f9132346f62def58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2069773733
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -777,9 +780,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069773732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e0750e1fd374cdfad1132fe9368168, type: 3}
+  m_Script: {fileID: 11500000, guid: c3ca7a55a66304c8395a3a3e2136c138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
