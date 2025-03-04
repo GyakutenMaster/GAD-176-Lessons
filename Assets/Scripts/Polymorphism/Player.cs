@@ -28,7 +28,7 @@ namespace SAE.GAD176.Tutorials.Polymorphism
         void Update()
         {
             // if the mouse click is pressed
-            // myWrapon.Fire()
+            // myWeapon.Fire()
         }
     }
 }
