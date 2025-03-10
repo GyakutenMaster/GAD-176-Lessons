@@ -237,7 +237,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9869500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938a75f547ac74f569c654467568b2dd, type: 3}
+  m_Script: {fileID: 11500000, guid: b1d28b2e38f8e4416ac487aea20c0f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   allEnemiesInScene: []
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 472336322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a71363b87dc6d4633b4edd0eec50b853, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b6ff66da700c4dafa7aa8455ff8af6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 560819527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85335a091bdb4135b7771dcf3eef53b, type: 3}
+  m_Script: {fileID: 11500000, guid: e9a8988b772d34b8f9132346f62def58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
@@ -684,7 +684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2069773733
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2069773732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c148965411131499bbaca7926dfea1e7, type: 3}
+  m_Script: {fileID: 11500000, guid: c3ca7a55a66304c8395a3a3e2136c138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100

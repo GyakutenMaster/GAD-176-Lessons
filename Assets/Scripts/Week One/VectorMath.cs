@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VectorMath : MonoBehaviour
+public class Vector_Math : MonoBehaviour
 {
     public Transform otherObject;
     public float moveSpeed = 5;
