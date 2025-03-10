@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SAE.GAD176.Tutorials.ScriptableObjects
+namespace SAE.GAD176.Tutorials.PhysicsCasting
 {
     public class Enemy : MonoBehaviour
     {
-        public Weapon currentWeapon;
-
         // Start is called before the first frame update
         void Start()
         {

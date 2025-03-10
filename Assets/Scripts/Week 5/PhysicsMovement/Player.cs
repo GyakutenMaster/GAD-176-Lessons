@@ -33,11 +33,11 @@ namespace SAE.GAD176.Tutorials.PhysicsMovement
         // Drag simulates air resistance as well as gradually slowing down objects.
         private void FixedUpdate()
         {
-            //if(rb)
-            //{
-            //    // taking the opposite direction we are heading, and multiplying it by the drag factor
-            //    rb.AddForce(-rb.velocity * dragFactor);
-            //}
+            if (rb)
+            {
+                // taking the opposite direction we are heading, and multiplying it by the drag factor
+                rb.AddForce(-rb.velocity * dragFactor);
+            }
         }
 
         private void MoveWithRigidbody()

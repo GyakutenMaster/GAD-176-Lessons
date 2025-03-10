@@ -34,7 +34,7 @@ namespace SAE.GAD176.Tutorials.Kinematics // Kinematics are not affected by the 
         private void Move()
         {
             // Lerp = linear interpolation
-            //transform.position = Vector3.Lerp(transform.position, targetPosition.position, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetPosition.position, moveSpeed * Time.deltaTime);
             // smooth damp = gradually moving to a point, using velocity.
             //transform.position = Vector3.SmoothDamp(transform.position, targetPosition.position, ref referenceVelocity, moveSpeed);
             // move towards = effectively a straight line movement at a fixed pace.
@@ -44,7 +44,7 @@ namespace SAE.GAD176.Tutorials.Kinematics // Kinematics are not affected by the 
         private void Rotate()
         {
             // lerp
-            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(targetRotation), smoothness * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(targetRotation), smoothness * Time.deltaTime);
             // slerp = spherical linear interpolation
             //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRotation), smoothness * Time.deltaTime);
             // rotatetowards
@@ -54,7 +54,7 @@ namespace SAE.GAD176.Tutorials.Kinematics // Kinematics are not affected by the 
         private void Scale()
         {
             // lerp
-            //transform.localScale = Vector3.Lerp(transform.localScale, targetScale, scaleSpeed * Time.deltaTime);
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, scaleSpeed * Time.deltaTime);
             // smooth damp
             //transform.localScale = Vector3.SmoothDamp(transform.localScale, targetScale, ref referenceScaleVelocity, scaleSpeed);
             // scale
