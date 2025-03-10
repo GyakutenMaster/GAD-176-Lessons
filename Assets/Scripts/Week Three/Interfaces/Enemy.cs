@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SAE.GAD176.Tutorials.Inheritance
+namespace SAE.GAD176.Tutorials.Interfaces
 {
-    public class Enemy : MonoBehaviour 
+    public class Enemy : MonoBehaviour
     {
         protected Player playerReference; // protected acts just like private, no other scrpts can access or modify it, unless it is inheriting from this class.
         [SerializeField] protected float health = 100;

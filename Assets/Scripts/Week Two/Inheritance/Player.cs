@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SAE.GAD176.Tutorials.Interfaces // If I find myself copying and pasting, it is a good sign that I should create a base Class and Inherit from it.
+namespace SAE.GAD176.Tutorials.Inheritance // If I find myself copying and pasting, it is a good sign that I should create a base Class and Inherit from it.
 {
     public class Player : MonoBehaviour, IKillable//, ICollectable, IEquip, etc, I can keep on putting a comma and implement interfaces.
     {

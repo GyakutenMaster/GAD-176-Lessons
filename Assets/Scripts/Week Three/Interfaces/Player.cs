@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SAE.GAD176.Tutorials.Inheritance // If I find myself copying and pasting, it is a good sign that I should create a base Class and Inherit from it.
+namespace SAE.GAD176.Tutorials.Interfaces
 {
     public class Player : MonoBehaviour
     {
