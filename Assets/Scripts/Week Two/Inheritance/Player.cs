@@ -28,7 +28,7 @@ namespace SAE.GAD176.Tutorials.Interfaces // If I find myself copying and pastin
         void Update()
         {
             // if the mouse click is pressed
-            // myWrapon.Fire()
+            // myWeapon.Fire()
         }
 
         public bool IsAlive()

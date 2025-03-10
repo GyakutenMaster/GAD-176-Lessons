@@ -2,7 +2,11 @@
 
 //// S - Single Responsibility
 //// One class should do one job = A class should have only one reason to change.
-//// Non-Compliant: Data manager handling both saving and logging.
+//// E.g. UI script/class should be asking Player script/class for their data.
+////      Polymorph (E.g. Attack script) are classes.
+////      Interfaces (E.g. ICollectible, IDamageable) are not classes.
+
+/// Non-Compliant: Data manager handling both saving and logging.
 //public class DataManager
 //{
 //    public void SaveAndLogData(string data)
@@ -12,7 +16,7 @@
 //    }
 //}
 
-//// Compliant: Separate conderns of saving and logging.
+/// Compliant: Separate conderns of saving and logging.
 //public class DataManager
 //{
 //    public void SaveData(string data)
@@ -30,9 +34,12 @@
 //    }
 //}
 
+
 //// O - Open Closed Principle
 //// Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification.
-//// Non-Compliant: Modifying existing class.
+//// E.g. Have a Weapon interface, then class for each weapon.
+
+/// Non-Compliant: Modifying existing class.
 //public class Circle
 //{
 //    public double Radius { get; set; }
@@ -43,7 +50,7 @@
 //    }
 //}
 
-//// Compliant: Extensible through inheritance
+/// Compliant: Extensible through inheritance
 //public abstract class Shape
 //{
 //    public abstract double Area(); 
@@ -59,9 +66,13 @@
 //    }
 //}
 
+
 //// L - Liskov substitution Principle
 //// Subtypes must be substitutable for their base types without altering the correctness of the program.
-//// Non-Compliant: Violating LSP, Square cannot substitute Rectangle
+//// E.g. Instead of replacing the attack function, add a CastSpell interface,
+////      keep the basic attack function then add a spell attack function.
+
+/// Non-Compliant: Violating LSP, Square cannot substitute Rectangle
 //public class Rectangle
 //{
 //    public int Width { get; set; }
@@ -86,7 +97,7 @@
 //    }
 //}
 
-//// Compliant: Square is a valid substitute for Rectangle
+/// Compliant: Square is a valid substitute for Rectangle
 //public class Rectangle
 //{
 //    public virtual int Width { get; set; }
@@ -111,11 +122,14 @@
 //    }
 //}
 
+
 //// I - Interface Segregration Principle
 ///*
 // * A client should not be forced to implement interfaces it does not use.
 // */
-//// Non-Compliant: Single interface forcing unnecessary methods.
+//// E.g. Don't overfill an interface. Separate interfaces for different character abilities.
+
+/// Non-Compliant: Single interface forcing unnecessary methods.
 //public interface IWorker
 //{
 //    void Work();
@@ -136,7 +150,7 @@
 //    } 
 //}
 
-//// Compliant: Segregated interfaces
+/// Compliant: Segregated interfaces
 //public interface IWorker
 //{
 //    void Work();
@@ -169,12 +183,17 @@
 //    } 
 //}
 
+
 //// D - Dependancy Inversion Principle
 ///*
 // * High-level modules should not depend on low-level modules. Both should depend on abstractions.
 // * Abstractions should not depend on details; details should depend on abstractions.
 // */
-//// Non-Compliant: High-level module (DataProcessor) depends on low-level module (Console).
+//// E.g. High level modules are binary (simple) while low level modules are complicated.
+////      For example, Player class is lower due to depending on lots of classes.
+////      The Sword class is higher since it doesn't depend as much as the player.
+
+/// Non-Compliant: High-level module (DataProcessor) depends on low-level module (Console).
 //public class ConsoleLogger
 //{
 //    public void Log(string message)
@@ -199,7 +218,7 @@
 //    } 
 //}
 
-//// Compliant: Abstraction (ILogger) depends on abstraction, not details
+/// Compliant: Abstraction (ILogger) depends on abstraction, not details
 //public interface ILogger
 //{
 //    void Log(string message);

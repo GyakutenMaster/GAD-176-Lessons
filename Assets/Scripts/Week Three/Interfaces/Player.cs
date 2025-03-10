@@ -28,7 +28,7 @@ namespace SAE.GAD176.Tutorials.Inheritance // If I find myself copying and pasti
         void Update()
         {
             // if the mouse click is pressed
-            // myWrapon.Fire()
+            // myWeapon.Fire()
         }
     }
 }
