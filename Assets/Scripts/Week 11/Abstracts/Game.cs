@@ -15,6 +15,7 @@ namespace SAE.GAD176.Tutorials.Abstracts
         {
             index = 0;
             currentlyEquipped = allWeapons[index];
+            // currentlyEquipped = Generics.Generics.GetFirstInList(allWeapons);
         }
 
         // Update is called once per frame

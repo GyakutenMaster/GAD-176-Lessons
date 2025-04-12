@@ -10,7 +10,7 @@ namespace SAE.GAD176.Tutorials.Abstracts
 
         public override void Attack()
         {
-            Debug.Log("Shooting this weapon called:" + weaponName + " at a rate of " + fireRate + " bullets per second and do " + damage + "damage.");
+            Debug.Log("Shooting this weapon called:" + weaponName + " at a rate of " + fireRate + " bullets per second and do " + damage + " damage.");
         }
     }
 }

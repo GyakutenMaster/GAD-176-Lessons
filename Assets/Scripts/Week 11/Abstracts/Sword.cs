@@ -10,7 +10,7 @@ namespace SAE.GAD176.Tutorials.Abstracts
 
         public override void Attack()
         {
-            Debug.Log("Swinging this sword called:" + weaponName + " at a speed of " + swingSpeed + "m/s and do " + damage + "damage.");
+            Debug.Log("Swinging this sword called:" + weaponName + " at a speed of " + swingSpeed + "m/s and do " + damage + " damage.");
         }
     }
 }
