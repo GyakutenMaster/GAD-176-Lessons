@@ -83,6 +83,18 @@ namespace SAE.GAD176.Tutorials.ObjectPooling
                 //AddToPool(obj, obj, objectPools[obj]);
             }
 
+            if(obj.GetComponent<Rigidbody>())
+            {
+                obj.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                obj.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            }
+
+            if (obj.GetComponent<Rigidbody2D>())
+            {
+                obj.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+                obj.GetComponent<Rigidbody2D>().angularVelocity = 0;
+            }
+
             obj.SetActive(false); // turning the object off before I add it to the pool so you can't see it.
         }
 
