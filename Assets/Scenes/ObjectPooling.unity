@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8698737798393851286, guid: 37d6565fb4a2c4b18ae9c2c092955d14, type: 3}
   spawnPoint: {fileID: 2117506836}
+  collectable: {fileID: 4292732350110043841, guid: 9ff00e38c884f4f9195e5c672352b1a1, type: 3}
 --- !u!65 &10733915
 BoxCollider:
   m_ObjectHideFlags: 0
